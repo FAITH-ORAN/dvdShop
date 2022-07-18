@@ -1,12 +1,14 @@
 package com.service;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.bean.Movie;
 import com.repository.MovieRepositoryInterface;
 
 
 
 public class DefaultMovieService implements MovieServiceInterface{
-
+	@Autowired
     private MovieRepositoryInterface movieRepository;
 
     public MovieRepositoryInterface getMovieRepository() {

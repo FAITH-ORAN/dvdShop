@@ -2,10 +2,13 @@ package com.controller;
 
 import java.util.Scanner;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import com.bean.Movie;
 import com.service.MovieServiceInterface;
 
 public class MovieController {
+	@Autowired
 	private MovieServiceInterface movieService;
 
     public MovieServiceInterface getMovieService() {
