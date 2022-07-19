@@ -7,11 +7,12 @@
     http://www.springframework.org/schema/context/spring-context.xsd" >
     
     <context:annotation-config />
+    <context:property-placeholder location="classpath:application.properties"/>
     
 
     <bean class=""/>
         <bean id="movieRepository" class="com.repository.FileMovieRepository">
-        	 <property name="file" value="C:\\temp\\movies.txt" /> 
+        	<!-- <property name="file" value="C:\\temp\\movies.txt" /> -->  
         </bean>
 
 	    <bean id="movieService" class="com.service.DefaultMovieService"></bean>
