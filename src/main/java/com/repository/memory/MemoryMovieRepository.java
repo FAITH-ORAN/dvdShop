@@ -1,10 +1,13 @@
-package com.repository;
+package com.repository.memory;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.bean.Movie;
+import org.springframework.stereotype.Repository;
 
+import com.bean.Movie;
+import com.repository.MovieRepositoryInterface;
+@Repository
 public class MemoryMovieRepository implements MovieRepositoryInterface{
 
     private List<Movie> movies=new ArrayList<>();

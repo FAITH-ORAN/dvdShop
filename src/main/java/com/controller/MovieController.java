@@ -3,10 +3,11 @@ package com.controller;
 import java.util.Scanner;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
 
 import com.bean.Movie;
 import com.service.MovieServiceInterface;
-
+@Controller
 public class MovieController {
 	@Autowired
 	private MovieServiceInterface movieService;

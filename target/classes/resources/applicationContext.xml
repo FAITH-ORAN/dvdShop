@@ -8,15 +8,18 @@
     
     <context:annotation-config />
     <context:property-placeholder location="classpath:application.properties"/>
+    <context:component-scan base-package="com.repository.file"/>
+      <context:component-scan base-package="com.service"/>
+        <context:component-scan base-package="com.controller"/>
     
 
-    <bean class=""/>
+   <!--  <bean class=""/>
         <bean id="movieRepository" class="com.repository.FileMovieRepository">
-        	<!-- <property name="file" value="C:\\temp\\movies.txt" /> -->  
+         <property name="file" value="C:\\temp\\movies.txt" /> 
         </bean>
 
 	    <bean id="movieService" class="com.service.DefaultMovieService"></bean>
 	
-	    <bean id="movieController" class="com.controller.MovieController"> </bean>
+	    <bean id="movieController" class="com.controller.MovieController"> </bean> -->
 
 	</beans>
