@@ -11,7 +11,7 @@ import com.bean.Movie;
 import com.repository.MovieRepositoryInterface;
 @Repository
 public class FileMovieRepository implements MovieRepositoryInterface{
-	@Value("movies.file.location")
+	  @Value("${movies.file.location}")
 	private File file;
 
     public void add(Movie movie){

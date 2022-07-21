@@ -1,0 +1,8 @@
+com\repository\file\FileMovieRepository.class
+com\controller\MovieController.class
+com\service\MovieServiceInterface.class
+com\starterApp\App.class
+com\repository\memory\MemoryMovieRepository.class
+com\repository\MovieRepositoryInterface.class
+com\bean\Movie.class
+com\service\DefaultMovieService.class

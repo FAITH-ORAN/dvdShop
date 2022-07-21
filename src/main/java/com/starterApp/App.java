@@ -15,10 +15,10 @@ import com.repository.file.FileMovieRepository;
 import com.service.DefaultMovieService;
 
 @SpringBootApplication
-//@Configuration
-//@ComponentScan(basePackages= {"com.repository.file","com.service","com.controller"})
-//@PropertySource("classpath:application.properties")
-@ImportResource("clapath:applicationContext.xml")
+@Configuration
+@ComponentScan(basePackages= {"com.repository.file","com.service","com.controller"})
+@PropertySource("classpath:application.properties")
+//@ImportResource("clapath:applicationContext.xml")
 public class App {
 	   public static void main( String[] args ) {
 			/*
