@@ -31,4 +31,6 @@ public class MovieController {
         movie.setGenre(genre);
         movieService.registerMovie(movie);
     }
+    
+    
 }
